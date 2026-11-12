@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2052e7c66ce00433de04039f50fd5472 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2052e7c66ce00433de04039f50fd5472" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2052e7c66ce00433de04039f50fd5472 = L.map(
+                "map_2052e7c66ce00433de04039f50fd5472",
+                {
+                    center: [-4.3129, -70.0983],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3cfec1e8a63f0d88849e7f1bb72545e2 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3cfec1e8a63f0d88849e7f1bb72545e2.addTo(map_2052e7c66ce00433de04039f50fd5472);
+        
+    
+            var circle_marker_75a7237478c88f74ad6aa66257d4a97f = L.circleMarker(
+                [-4.3129, -70.0983],
+                {"bubblingMouseEvents": true, "color": "#ff4d4d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff4d4d", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 3}
+            ).addTo(map_2052e7c66ce00433de04039f50fd5472);
+        
+    
+        var popup_cb7b34ad2a61c8378a7b8c91d5b2cc4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3de73829e097a2887f9e32136180105e = $(`<div id="html_3de73829e097a2887f9e32136180105e" style="width: 100.0%; height: 100.0%;"><b>Vale do Javari</b><br>Status: Critical Vulnerability<br>Protection: Coordinates Obfuscated / Restricted</div>`)[0];
+                popup_cb7b34ad2a61c8378a7b8c91d5b2cc4d.setContent(html_3de73829e097a2887f9e32136180105e);
+            
+        
+
+        circle_marker_75a7237478c88f74ad6aa66257d4a97f.bindPopup(popup_cb7b34ad2a61c8378a7b8c91d5b2cc4d)
+        ;
+
+        
+    
+    
+            var circle_marker_2a963aba226c8f233c14c07aa1ea20b4 = L.circleMarker(
+                [-11.5, -53.5],
+                {"bubblingMouseEvents": true, "color": "#ffcc00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(map_2052e7c66ce00433de04039f50fd5472);
+        
+    
+        var popup_196e7d414fe64b622833ce66b5215e69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_646d393642ec3f8cf30764eafad9097e = $(`<div id="html_646d393642ec3f8cf30764eafad9097e" style="width: 100.0%; height: 100.0%;"><b>Parque Indígena do Xingu</b><br>Status: Moderate Vulnerability<br>Protection: Academic Access with Obfuscation</div>`)[0];
+                popup_196e7d414fe64b622833ce66b5215e69.setContent(html_646d393642ec3f8cf30764eafad9097e);
+            
+        
+
+        circle_marker_2a963aba226c8f233c14c07aa1ea20b4.bindPopup(popup_196e7d414fe64b622833ce66b5215e69)
+        ;
+
+        
+    
+</script>
+</html>

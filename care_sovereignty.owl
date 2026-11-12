@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://test.org/care_sovereignty.owl"
+         xmlns="http://test.org/care_sovereignty.owl#">
+
+<owl:Ontology rdf:about="http://test.org/care_sovereignty.owl"/>
+
+<owl:ObjectProperty rdf:about="#protegidoPor">
+  <rdfs:domain rdf:resource="#ConhecimentoEcologico"/>
+  <rdfs:range rdf:resource="#PoliticaDeAcesso"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#pertenceA">
+  <rdfs:domain rdf:resource="#ConhecimentoEcologico"/>
+  <rdfs:range rdf:resource="#Territorio"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#habitadoPor">
+  <rdfs:domain rdf:resource="#Territorio"/>
+  <rdfs:range rdf:resource="#PovoOriginario"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#temVulnerabilidade">
+  <rdfs:domain rdf:resource="#Territorio"/>
+  <rdfs:range rdf:resource="#NivelVulnerabilidade"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#ConhecimentoEcologico">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Territorio">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#PovoOriginario">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#NivelVulnerabilidade">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#PoliticaDeAcesso">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#VulnerabilidadeCritica">
+  <rdf:type rdf:resource="#NivelVulnerabilidade"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#VulnerabilidadeModerada">
+  <rdf:type rdf:resource="#NivelVulnerabilidade"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#TerritorioIndigenaValeDoJavari">
+  <rdf:type rdf:resource="#Territorio"/>
+  <temVulnerabilidade rdf:resource="#VulnerabilidadeCritica"/>
+  <habitadoPor rdf:resource="#PovosMatisEValeriaIsolados"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ParqueIndigenaDoXingu">
+  <rdf:type rdf:resource="#Territorio"/>
+  <temVulnerabilidade rdf:resource="#VulnerabilidadeModerada"/>
+  <habitadoPor rdf:resource="#PovosXinguanos"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PovosMatisEValeriaIsolados">
+  <rdf:type rdf:resource="#PovoOriginario"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PovosXinguanos">
+  <rdf:type rdf:resource="#PovoOriginario"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PoliticaRestricaoComercialEBiopirataria">
+  <rdf:type rdf:resource="#PoliticaDeAcesso"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PoliticaPesquisaAcademicaOfuscada">
+  <rdf:type rdf:resource="#PoliticaDeAcesso"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PoliticaOrgaoOficialControlado">
+  <rdf:type rdf:resource="#PoliticaDeAcesso"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ManejoTerraPretaAntropica">
+  <rdf:type rdf:resource="#ConhecimentoEcologico"/>
+  <pertenceA rdf:resource="#TerritorioIndigenaValeDoJavari"/>
+  <protegidoPor rdf:resource="#PoliticaRestricaoComercialEBiopirataria"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IndicadoresFenologicosDeCheias">
+  <rdf:type rdf:resource="#ConhecimentoEcologico"/>
+  <pertenceA rdf:resource="#ParqueIndigenaDoXingu"/>
+  <protegidoPor rdf:resource="#PoliticaPesquisaAcademicaOfuscada"/>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>
