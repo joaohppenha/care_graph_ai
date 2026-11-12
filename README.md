@@ -1,5 +1,7 @@
 # CARE-Graph AI: Neuro-Symbolic Firewall for Indigenous Data Sovereignty
 
+Project submitted to the Code for Humanity hackathon
+
 ## 1. Introduction & Executive Summary
 
 **CARE-Graph AI** is an advanced, real-time neuro-symbolic governance firewall engineered specifically to protect indigenous data sovereignty, traditional ecological knowledge (TEK), and territorial integrity in the Amazon basin, focusing on high-sensitivity regions such as the Vale do Javari and Xingu Park. As data extraction and automated machine learning pipelines increasingly treat indigenous heritage as public domain commodities, this architecture establishes an unyielding bridge between traditional knowledge stores and external consumers. By merging symbolic legal reasoning, deterministic data contracts, and dynamic geospatial intelligence, the system operationalizes the **CARE Principles** (*Collective benefit, Authority to control, Responsibility, Ethics*) and enforces compliance with national legislation, including **Brazilian Biodiversity Law (Law 13.123/2015)**.
